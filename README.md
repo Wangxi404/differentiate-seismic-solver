@@ -24,6 +24,8 @@ With all 40 shots in each update, whole-model Vp RMSE fell from **362 to
 inverted Vp panels and the loss curve to a local HTML report.
 [Run the inversion and generate the figures](https://github.com/Wangxi404/DiffSPECFEM-native#run-the-example)
 
+![Marmousi-II Vp, from left to right: true model, Gaussian initial model and DiffSPECFEM-native inversion after 300 updates](docs/figures/diffspecfem-marmousi2.png)
+
 Marmousi-II by Gary S. Martin, Robert Wiley and Kurt J. Marfurt.
 [AGL downloads](https://www.agl.uh.edu/downloads/downloads.htm) · [Model preparation](docs/model-data.md#marmousi-ii)
 
