@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "profile_id": "seg-eage-salt3d-fixed33-v1",
+  "file": {
+    "name": "model_fields.npz",
+    "sha256": "fb0d4acc42525ed501e6fe1eb922a7445c7ff17ac9b7c1f0ab8a7e906da7c585",
+    "bytes": 181788
+  },
+  "axis_order": [
+    "x",
+    "y",
+    "depth"
+  ],
+  "units": {
+    "x": "m",
+    "y": "m",
+    "depth": "m",
+    "true": "m/s",
+    "initial": "m/s",
+    "rho": "kg/m^3",
+    "vs": "m/s"
+  },
+  "arrays": {
+    "x": {
+      "dtype": "<f8",
+      "shape": [
+        33
+      ],
+      "sha256_le_f64_C_order": "6aeb6349e94b72d8e8348956564f8076b5730e115bca2c287480dcf83c8d1a1e",
+      "units": "m",
+      "min": -10000.0,
+      "max": 10000.0
+    },
+    "y": {
+      "dtype": "<f8",
+      "shape": [
+        33
+      ],
+      "sha256_le_f64_C_order": "6aeb6349e94b72d8e8348956564f8076b5730e115bca2c287480dcf83c8d1a1e",
+      "units": "m",
+      "min": -10000.0,
+      "max": 10000.0
+    },
+    "depth": {
+      "dtype": "<f8",
+      "shape": [
+        17
+      ],
+      "sha256_le_f64_C_order": "c129ead3149cc8102332960155130471ea03398ee392542a7668efbc9d9357f6",
+      "units": "m",
+      "min": 0.0,
+      "max": 4180.0
+    },
+    "true": {
+      "dtype": "<f8",
+      "shape": [
+        33,
+        33,
+        17
+      ],
+      "sha256_le_f64_C_order": "dbf91cd0cd4635ee4e1458b1b0416b056beba34e101350881154772c551fd275",
+      "units": "m/s",
+      "min": 1517.399169921875,
+      "max": 4471.55224609375
+    },
+    "initial": {
+      "dtype": "<f8",
+      "shape": [
+        33,
+        33,
+        17
+      ],
+      "sha256_le_f64_C_order": "6114c4edacb3149286659c9f151815a49cfea0729c6c5adb3aaf4e1898c6748d",
+      "units": "m/s",
+      "min": 1743.3630038633041,
+      "max": 2604.092341907871
+    },
+    "rho": {
+      "dtype": "<f8",
+      "shape": [],
+      "sha256_le_f64_C_order": "a21cdf9eb908794c7fc839fc50781ee7233462021635fe9a242b4304b73103ed",
+      "units": "kg/m^3",
+      "min": 2200.0,
+      "max": 2200.0
+    },
+    "vs": {
+      "dtype": "<f8",
+      "shape": [],
+      "sha256_le_f64_C_order": "31d060b6110dde735a1c71c8ed6524c1d2755dc60fc34576029d2febb365d30e",
+      "units": "m/s",
+      "min": 850.0,
+      "max": 850.0
+    }
+  },
+  "profile": {
+    "name": "salt3d-acceptance.json",
+    "sha256": "bd0cbc03cae5dae7530370585f831c6f79d3237007ea4d24f12a751e94c50395"
+  },
+  "notices": {
+    "DATA_ATTRIBUTION.txt": {
+      "sha256": "67fbc7ce9bbe81c0361978cfdd606f2c33f09af32c3dde063c28f04916d659a3",
+      "bytes": 3657
+    },
+    "DATA_LICENSE.txt": {
+      "sha256": "1aaf0648e34e568b31c2f1511958c1915a164511989c693fc133e82a10e557cb",
+      "bytes": 19050
+    }
+  },
+  "provenance": {
+    "dataset": "SEG/EAGE3D Salt; retained exact reduced/refined C3 benchmark",
+    "raw_volume_sha256": "8f915d59f3bdf6ee7c5c73ae680c2c8a90e9a5b4b7e8dae4c9312d51c574ecda",
+    "derivation": "Antialiased raw volume to17x17x9; initial blurred there; exact nested trilinear prolongation to33x33x17. No new raw geological resolution and no per-use regeneration.",
+    "canonical_true_sha256": "dbf91cd0cd4635ee4e1458b1b0416b056beba34e101350881154772c551fd275",
+    "canonical_initial_sha256": "6114c4edacb3149286659c9f151815a49cfea0729c6c5adb3aaf4e1898c6748d",
+    "license": "CC BY4.0; original attribution and license accompany data/export"
+  }
+}

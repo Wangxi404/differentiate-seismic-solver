@@ -1,0 +1,438 @@
+{
+  "schema_version": 1,
+  "profile_id": "seg-eage-salt3d-fixed33-v1",
+  "purpose": "Mandatory fixed physical model for3D source-solver inversion acceptance; use exact bundled arrays, not a task-selected synthetic model. Not a solver adapter or universal numerical kernel configuration.",
+  "model_asset": "assets/salt3d-acceptance/model_fields.npz",
+  "asset_manifest": "assets/salt3d-acceptance/manifest.json",
+  "model_identity": {
+    "package_sha256": "fb0d4acc42525ed501e6fe1eb922a7445c7ff17ac9b7c1f0ab8a7e906da7c585",
+    "axis_order": [
+      "x",
+      "y",
+      "depth"
+    ],
+    "units": {
+      "x": "m",
+      "y": "m",
+      "depth": "m",
+      "true": "m/s",
+      "initial": "m/s",
+      "rho": "kg/m^3",
+      "vs": "m/s"
+    },
+    "arrays": {
+      "x": {
+        "dtype": "<f8",
+        "shape": [
+          33
+        ],
+        "sha256_le_f64_C_order": "6aeb6349e94b72d8e8348956564f8076b5730e115bca2c287480dcf83c8d1a1e",
+        "units": "m",
+        "min": -10000.0,
+        "max": 10000.0
+      },
+      "y": {
+        "dtype": "<f8",
+        "shape": [
+          33
+        ],
+        "sha256_le_f64_C_order": "6aeb6349e94b72d8e8348956564f8076b5730e115bca2c287480dcf83c8d1a1e",
+        "units": "m",
+        "min": -10000.0,
+        "max": 10000.0
+      },
+      "depth": {
+        "dtype": "<f8",
+        "shape": [
+          17
+        ],
+        "sha256_le_f64_C_order": "c129ead3149cc8102332960155130471ea03398ee392542a7668efbc9d9357f6",
+        "units": "m",
+        "min": 0.0,
+        "max": 4180.0
+      },
+      "true": {
+        "dtype": "<f8",
+        "shape": [
+          33,
+          33,
+          17
+        ],
+        "sha256_le_f64_C_order": "dbf91cd0cd4635ee4e1458b1b0416b056beba34e101350881154772c551fd275",
+        "units": "m/s",
+        "min": 1517.399169921875,
+        "max": 4471.55224609375
+      },
+      "initial": {
+        "dtype": "<f8",
+        "shape": [
+          33,
+          33,
+          17
+        ],
+        "sha256_le_f64_C_order": "6114c4edacb3149286659c9f151815a49cfea0729c6c5adb3aaf4e1898c6748d",
+        "units": "m/s",
+        "min": 1743.3630038633041,
+        "max": 2604.092341907871
+      },
+      "rho": {
+        "dtype": "<f8",
+        "shape": [],
+        "sha256_le_f64_C_order": "a21cdf9eb908794c7fc839fc50781ee7233462021635fe9a242b4304b73103ed",
+        "units": "kg/m^3",
+        "min": 2200.0,
+        "max": 2200.0
+      },
+      "vs": {
+        "dtype": "<f8",
+        "shape": [],
+        "sha256_le_f64_C_order": "31d060b6110dde735a1c71c8ed6524c1d2755dc60fc34576029d2febb365d30e",
+        "units": "m/s",
+        "min": 850.0,
+        "max": 850.0
+      }
+    },
+    "active_parameter": "Vp represented by initial/true controls",
+    "fixed_priors": {
+      "Vs_m_s": 850.0,
+      "rho_kg_m3": 2200.0
+    },
+    "extent_m": {
+      "x": [
+        -10000.0,
+        10000.0
+      ],
+      "y": [
+        -10000.0,
+        10000.0
+      ],
+      "depth": [
+        0.0,
+        4180.0
+      ]
+    },
+    "spacing_m": [
+      625.0,
+      625.0,
+      261.25
+    ],
+    "initialization": "Use bundled initial verbatim. Never reblur or start from an existing inverted checkpoint for a fresh test.",
+    "forbidden_silent_changes": [
+      "different salt/anomaly model",
+      "crop",
+      "resample/downsample/prolong again",
+      "smooth/reblur",
+      "alter amplitude/background/fixed priors",
+      "replace with axisymmetric/extruded/averaged field",
+      "recompute from raw data using different preprocessing"
+    ],
+    "only_explicit_user_override": "A later explicit user choice may define a separately labelled case; task/agent/resource convenience cannot replace this mandatory profile."
+  },
+  "acquisition": {
+    "independent_shots": 9,
+    "source_grid": {
+      "x_m": [
+        -4500.0,
+        0.0,
+        4500.0
+      ],
+      "y_m": [
+        -4500.0,
+        0.0,
+        4500.0
+      ],
+      "depth_m": 522.5,
+      "order": "y-major, x-minor"
+    },
+    "sources": [
+      {
+        "id": "s0",
+        "xyz_depth_m": [
+          -4500.0,
+          -4500.0,
+          522.5
+        ]
+      },
+      {
+        "id": "s1",
+        "xyz_depth_m": [
+          0.0,
+          -4500.0,
+          522.5
+        ]
+      },
+      {
+        "id": "s2",
+        "xyz_depth_m": [
+          4500.0,
+          -4500.0,
+          522.5
+        ]
+      },
+      {
+        "id": "s3",
+        "xyz_depth_m": [
+          -4500.0,
+          0.0,
+          522.5
+        ]
+      },
+      {
+        "id": "s4",
+        "xyz_depth_m": [
+          0.0,
+          0.0,
+          522.5
+        ]
+      },
+      {
+        "id": "s5",
+        "xyz_depth_m": [
+          4500.0,
+          0.0,
+          522.5
+        ]
+      },
+      {
+        "id": "s6",
+        "xyz_depth_m": [
+          -4500.0,
+          4500.0,
+          522.5
+        ]
+      },
+      {
+        "id": "s7",
+        "xyz_depth_m": [
+          0.0,
+          4500.0,
+          522.5
+        ]
+      },
+      {
+        "id": "s8",
+        "xyz_depth_m": [
+          4500.0,
+          4500.0,
+          522.5
+        ]
+      }
+    ],
+    "receiver_grid": {
+      "x_m": [
+        -6000,
+        -5000,
+        -4000,
+        -3000,
+        -2000,
+        -1000,
+        0,
+        1000,
+        2000,
+        3000,
+        4000,
+        5000,
+        6000
+      ],
+      "y_m": [
+        -6000,
+        -5000,
+        -4000,
+        -3000,
+        -2000,
+        -1000,
+        0,
+        1000,
+        2000,
+        3000,
+        4000,
+        5000,
+        6000
+      ],
+      "depth_m": 261.25,
+      "order": "y-major, x-minor",
+      "receivers": 169
+    },
+    "physical_source": {
+      "type": "Vertical force",
+      "wavelet": "Ricker",
+      "reference_parameters": {
+        "native_class": "GaussianSTF",
+        "half_duration_s": 1.0,
+        "decay_factor": 1.628,
+        "time_shift_s": 0.0,
+        "use_derivative_integral": "RICKER"
+      },
+      "reference_numeric_coefficient": 10000000000.0,
+      "reference_waveform": {
+        "equation": "w(t) = a^3/sqrt(pi) * (4*(a*(t-t_shift))^2 - 2) * exp(-(a*(t-t_shift))^2)",
+        "a_per_s": 1.628,
+        "t_shift_s": 0.0,
+        "reference_start_s": -2.5,
+        "reference_peak_frequency_hz": 0.5182084947072112,
+        "normalization": "Exact negative-central second derivative of Gaussian from the native reference, not a unit-peak Ricker. The numeric coefficient1e10 multiplies this waveform; native units/signs must be derived/qualified.",
+        "reference_source_file": "AxiSEM3D bc67bb2 src/core/source/elem_src/stf/GaussianSTF.hpp, derivativeOrder2"
+      }
+    },
+    "reference_observable": {
+      "quantity": "displacement",
+      "components": [
+        "S",
+        "P",
+        "Z"
+      ],
+      "native_coordinate_frame": "spz",
+      "axis_reference_azimuth_rad": 0.0,
+      "sampling": "every native step, full window",
+      "units": "m"
+    },
+    "binding_contract": "Preserve declared physical grids; native coordinate frames, vector components and units need an explicit qualified map. Native class names/ZRT/SPZ labels are reference provenance, not a mandatory software API. Unsupported physics/observables must be disclosed as a scoped variant, never hidden by changing the model."
+  },
+  "objective": {
+    "name": "Debiased soft-DTW divergence",
+    "gamma": 0.1,
+    "ground_cost": "Exact squared fixed-scale normalized amplitude difference",
+    "dtype": "float64",
+    "bandwidth": null,
+    "scale": "Fixed positive original-record observed RMS per shot over all declared times/receivers/components",
+    "trace_normalization": "Each divergence / processed_Nt, mean over all declared scalar traces, then mean over all9 independent shots",
+    "prediction_self_both_arguments": true,
+    "positivity_clamp": false,
+    "prediction_dependent_masks": false,
+    "regularization": null,
+    "reference_sampling": {
+      "native_or_common_dt_s": 0.01,
+      "t0_s": -2.5,
+      "end_s": 8.0,
+      "samples": 1051,
+      "decimation": 5,
+      "processed_samples": 211,
+      "anti_alias_cutoff_hz": 8.0,
+      "anti_alias_transition_hz": 2.0
+    },
+    "sampling_contract": "Bind actual native timing/observations explicitly. Any required native-to-declared sampling or component map stays in prediction AD and is checked end to end. Different native integration steps are permitted; do not copy a different model or time settings blindly."
+  },
+  "inversion": {
+    "start_accepted_update": 0,
+    "initial_array": "initial",
+    "optimizer_state": "Empty for a fresh application. Only an explicit continuation resumes the full actual checkpoint.",
+    "accepted_updates": 125,
+    "all_shots_at_same_current_model_then_one_update": true,
+    "Vp_bounds_m_s": [
+      1450.0,
+      4700.0
+    ],
+    "native_and_optimizer_choices": "Native mesh/order/modes/integrator/precision/history/MPI, qualified model-map VJP and optimizer are solver-specific. Measure resource/step affordability without altering fixed material arrays. Current reference safeguarded physical trials100m/s initial/500m/s cap are a disclosed reference, not an imposed optimizer API."
+  },
+  "presentation": {
+    "language": "English",
+    "columns": [
+      "True",
+      "Initial",
+      "Inverted"
+    ],
+    "rows": [
+      "XZ",
+      "YZ",
+      "XY"
+    ],
+    "sections_m": {
+      "x": 0.0,
+      "y": 0.0,
+      "depth": 2090.0
+    },
+    "color_scale": "Joint minimum and maximum of true, initial and last accepted Vp within the complete native coverage, before extracting sections.",
+    "palette": "Blues, high velocities dark",
+    "loss_collapsed": true,
+    "include_gradients": false,
+    "coverage": "Use the actual declared native-coverage mask consistently for all columns. Preserve full control extents and disclose unsimulated padding; do not pick favourable crops. Current reference cylinder and raw footprint are recorded below."
+  },
+  "data_provenance": {
+    "dataset": "SEG/EAGE 3-D Salt and Overthrust, Saltf@@ volume",
+    "copyright": "Copyright1997 Society of Exploration Geophysicists",
+    "attribution_file": "DATA_ATTRIBUTION.txt",
+    "license_file": "DATA_LICENSE.txt",
+    "license": "CC BY4.0",
+    "raw_volume_sha256": "8f915d59f3bdf6ee7c5c73ae680c2c8a90e9a5b4b7e8dae4c9312d51c574ecda",
+    "raw_shape_zyx": [
+      210,
+      676,
+      676
+    ],
+    "raw_dtype": ">f4",
+    "raw_spacing_m": 20.0,
+    "raw_origin_m": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "raw_download_url": null,
+    "coarse_preparation": {
+      "truth": "Gaussian anti-alias sigma(z,y,x)=(8,20,20) raw cells = (160,400,400)m, nearest boundaries; trilinear sample to17x17x9 after centering rawx/y at6750m, nearest outer extension",
+      "initial": "Gaussian filter of coarse true Vp, sigma=(1.8,1.8,1.8) coarsecells, physicalsigma=(2250,2250,940.5)m,mode nearest,order0,truncate4",
+      "coarse_true_fingerprint": "ff851245de3b24bdc9975312510b26931a065ac5e4dc4cf8d4b590e1de50bd42",
+      "coarse_initial_fingerprint": "3f36135da7140881d092bd3909ba370e27900c2db621e9a146ad318dd7018cb7"
+    },
+    "refinement": "Exact nested trilinear prolongation17x17x9 to33x33x17; no new geological detail and no re-filtering; coarse nodes preserved bitwise",
+    "provided_true_fingerprint": "dbf91cd0cd4635ee4e1458b1b0416b056beba34e101350881154772c551fd275",
+    "provided_initial_fingerprint": "6114c4edacb3149286659c9f151815a49cfea0729c6c5adb3aaf4e1898c6748d",
+    "upstream_visualization_slice_NPZ_used": false,
+    "data_supplied_from_retained_case_preparation": true,
+    "derived_arrays_not_a_new_raw_volume_preparation_claim": true
+  },
+  "reference_geometry": {
+    "control_extent_m": {
+      "x": [
+        -10000.0,
+        10000.0
+      ],
+      "y": [
+        -10000.0,
+        10000.0
+      ],
+      "depth": [
+        0.0,
+        4180.0
+      ]
+    },
+    "control_spacing_m": [
+      625.0,
+      625.0,
+      261.25
+    ],
+    "propagation_domain": {
+      "shape": "native cylindrical domain",
+      "radius_m": 10000.0,
+      "depth_range_m": [
+        0.0,
+        4180.0
+      ]
+    },
+    "original_raw_footprint_m": {
+      "x": [
+        -6750.0,
+        6750.0
+      ],
+      "y": [
+        -6750.0,
+        6750.0
+      ],
+      "depth": [
+        0.0,
+        4180.0
+      ]
+    },
+    "outer_material_extension": "Nearest raw-boundary material outside the original square; supplied field values are authoritative.",
+    "offline_evaluation_masks": {
+      "raw_footprint": "abs(x)<=6750 and abs(y)<=6750, all depths",
+      "native_cylinder": "x*x+y*y<=10000*10000, all depths"
+    },
+    "display": "Historical AxiSEM3D geometry record only; presentation.sections_m is normative: x=0,y=0,depth=2090m for matching XZ/YZ/XY views."
+  },
+  "native_realization_boundary": {
+    "mandatory": "Exact material arrays/initial/axes/fixed priors and full non-axisymmetric variation. Preserve the supplied original raw footprint and control extent.",
+    "allowed": "Derive the solver-specific interpolation/coordinate map and its consistent transpose onto its own native realization. Extra numerical padding may be declared without changing supplied samples.",
+    "unsupported": "If the input cannot realize this full3D physical model, report that limitation; do not substitute easier geology or call an altered case this acceptance profile.",
+    "reference_only": "The existing AxiSEM3D cylindrical/free-edge/NEWMARK/oddNr/P2 realization is provenance, not a requirement for every high-performance3D forward solver."
+  }
+}

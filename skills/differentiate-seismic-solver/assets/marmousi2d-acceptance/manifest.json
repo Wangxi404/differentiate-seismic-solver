@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "profile_id": "marmousi-ii-fast40-softdtw-v1",
+  "axis_order": [
+    "depth",
+    "x"
+  ],
+  "units": {
+    "vp_true": "m/s",
+    "vp_initial": "m/s",
+    "vs_fixed": "m/s",
+    "rho_fixed": "kg/m^3",
+    "x_m": "m",
+    "depth_m": "m",
+    "sampling_depth_m": "m",
+    "water_mask": "boolean"
+  },
+  "profile": {
+    "name": "protocol.json",
+    "sha256": "bdc40092e73856d9cf6f47c297fda60ce0e0b0442d8ad924127a9c4fd1898b9f"
+  },
+  "files": {
+    "model_fields.npz": {
+      "bytes": 70404,
+      "sha256": "17a59061b2c68095969fbc68ab2901ecc41ac8774cf1bfc70370bd1c8a424b93"
+    },
+    "training.npz": {
+      "bytes": 63031,
+      "sha256": "1e136e072fa4ea7b0d651916baee486358d8dab545c91a63d8cca67e4fefc7d7"
+    },
+    "truth_for_observations_and_offline_only.npz": {
+      "bytes": 8856,
+      "sha256": "3c647c65494a92ca6a58744b55da4e67ea2c1d5fa6410e7872e58d488a9156f0"
+    },
+    "DATA_ATTRIBUTION.txt": {
+      "bytes": 838,
+      "sha256": "cfc18e05b9fde2d042189dd1fd6c07280aa0e909af51503a191abd3cbea3d383"
+    },
+    "DATA_TERMS.txt": {
+      "bytes": 584,
+      "sha256": "cda159f5add3ea90f0bb1cab6c5325725a0c59d8d0d41bdda7b696e64e23cf54"
+    }
+  },
+  "arrays": {
+    "vp_true": {
+      "shape": [
+        68,
+        200
+      ],
+      "dtype": "float32",
+      "sha256": "64df0a996acacf11314a73d9eb8e53dd10a82b7d8ac114f781ad6acf2c1b6354"
+    },
+    "vp_initial": {
+      "shape": [
+        68,
+        200
+      ],
+      "dtype": "float32",
+      "sha256": "7db8245a005af561572ca0abc3638adbe2487312b87f6091501f602139d77f87"
+    },
+    "vs_fixed": {
+      "shape": [
+        68,
+        200
+      ],
+      "dtype": "float32",
+      "sha256": "b317f391ed90aedfc41819215d9247f02051b5663c976b3635cdbafc6c1b5663"
+    },
+    "rho_fixed": {
+      "shape": [
+        68,
+        200
+      ],
+      "dtype": "float32",
+      "sha256": "a306bc78f2adc262a4b9969e5c70534ee83a212cf334bd1ba2959c23033645d0"
+    },
+    "x_m": {
+      "shape": [
+        200
+      ],
+      "dtype": "float64",
+      "sha256": "2133fef51b637dfde79f371c35e49d6758ee27ec3ce7681e477a2d3294711dfc"
+    },
+    "depth_m": {
+      "shape": [
+        68
+      ],
+      "dtype": "float64",
+      "sha256": "77ec2eb286243933bb620e1e8ac0cab7a552126514ffe36e120a33afa6bb512c"
+    },
+    "sampling_depth_m": {
+      "shape": [
+        68
+      ],
+      "dtype": "float64",
+      "sha256": "1879658cf04f173213830c814953d24cab662ff78b1cb1317955274c298a66d6"
+    },
+    "water_mask": {
+      "shape": [
+        68,
+        200
+      ],
+      "dtype": "bool",
+      "sha256": "0a5afbba3a661ee68a993942fe11ea085430d6eaf17217eec24261d0679de510"
+    }
+  },
+  "status": "input_identity_only_not_a_new_native_inversion",
+  "training_unknown_true_vp_excluded": true,
+  "source_edition": "University of Houston AGL download edition of Marmousi-II",
+  "paper_true_initial_coordinate_arrays_exact": true,
+  "paper_source_data_npz_sha256": "63fc527d605d22b9f923e5c34b3e422d6271f165da7ade85e2b79bdc3821ab84"
+}

@@ -1,0 +1,10 @@
+University of Houston AGL Marmousi-II data terms
+
+The source archives are available from the University of Houston Allied
+Geophysical Laboratory. Its data portal lists Marmousi II as Level 3 – Limited.
+Consult the original terms for use and redistribution of the model and derived
+material arrays. The skill provides preparation code and checksums. Source
+archives and prepared NPZ files are generated or stored on the user's machine.
+
+AGL data policy and dataset entry: https://www.agl.uh.edu/resources-data.php
+Original model files: https://www.agl.uh.edu/downloads/downloads.htm

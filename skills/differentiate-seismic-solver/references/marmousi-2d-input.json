@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "name": "marmousi-ii-x8-10p5-full-depth-sigma60-vp-only",
+  "shape_depth_x": [555, 401],
+  "original_x_m": [8000.0, 10500.0],
+  "depth_m": [0.0, 3462.5],
+  "spacing_m": 6.25,
+  "initial_smoothing_sigma_m": 60.0,
+  "water_depth_m": 450.0,
+  "water_vp_m_s": 1500.0,
+  "fixed_density_kg_m3": 2450.0,
+  "hash_encoding": "C contiguous little-endian float64 array bytes",
+  "array_sha256": {
+    "vp_true": "fae8de68319e8adcead5849a1e248a41e46f64efee2fc3344bc0c1766a6a8f06",
+    "vp_initial": "f5183e8e1f9948033dd566b409078bd88ac5469ef9506fb46d7ddef3df2b55f2",
+    "vs_true": "32b394adcb1e7cf0b6ca20f4d8e9cbdc4e15f2c5a036527db6086725390d71bc",
+    "rho_true": "a125b6e361e8a953a030ad7131fa8a7f7c89738da951d71ff59be9cd08f8bd13",
+    "x": "b947c5a9bd571785657e5ffc8cb30bfba93bb67514e7cf6ab6df99d0c55dbe82",
+    "z": "2b767a104e233f7efa4816c7392eb66cc32bbfc063505ad7a7f6b8390b103f94"
+  },
+  "sources": {
+    "vp_marmousi-ii.segy.gz": {"url": "https://www.agl.uh.edu/downloads/vp_marmousi-ii.segy.gz", "sha256": "2c7a0c4170c95a15620c2146573711c61a4cef8dc27338ef6c211a81ffa68920"},
+    "vs_marmousi-ii.segy.gz": {"url": "https://www.agl.uh.edu/downloads/vs_marmousi-ii.segy.gz", "sha256": "c88bec68fc4bd7c6e624737a20ecd3241c90e10512103e28e61b344fb5baed7d"},
+    "density_marmousi-ii.segy.gz": {"url": "https://www.agl.uh.edu/downloads/density_marmousi-ii.segy.gz", "sha256": "9832e20ce1f79470fa8c100e79d66566cf8c1c162baa4289f37e7ee0b96f1e67"}
+  },
+  "redistribution": "No dataset bundled. Consult original dataset terms and attribution before redistribution; this manifest is provenance, not a new license grant."
+}

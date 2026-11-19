@@ -1,0 +1,15 @@
+University of Houston AGL download edition of Marmousi-II
+
+Gary S. Martin, Robert Wiley and Kurt J. Marfurt
+Allied Geophysical Laboratory, University of Houston
+Martin, G. S., Wiley, R., and Marfurt, K. J. (2006). Marmousi2: An elastic
+upgrade for Marmousi. The Leading Edge, 25(2), 156–166.
+https://doi.org/10.1190/1.2172306
+https://www.agl.uh.edu/downloads/downloads.htm
+
+The preparation script retrieves the three Model Definition SEG-Y archives
+for Vp, Vs and density. It samples a 68 by 200 grid at 45 m spacing, converts
+velocities and density to SI units and constructs the initial Vp with a 180 m
+Gaussian (reflected edges) and the positive bulk-modulus floor for fixed Vs.
+The last nominal depth of 3515 m samples the deepest source row at 3500 m.
+The generated arrays match the inputs used in the paper's full-shot inversion.

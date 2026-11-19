@@ -1,0 +1,209 @@
+{
+  "schema_version": 1,
+  "skill_name": "differentiate-seismic-solver",
+  "version": "0.6.16",
+  "created_utc": "2026-11-19T01:10:21.725312+00:00",
+  "packet_sha256": "ef03796ad358f9a4616275104fdf703874594e6d5f148c52e2c1360888bc16aa",
+  "files": [
+    {
+      "path": "LICENSE",
+      "bytes": 1060,
+      "sha256": "8dccc2ed406daefaa2cbf6747c0dc1f70596a918c220722a87618c35827d6585"
+    },
+    {
+      "path": "LICENSE.soft-dtw-objective",
+      "bytes": 1103,
+      "sha256": "0a1c9972c366ec98c3312742c33dd385404a62396f933139a9631b4c333d21af"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 15245,
+      "sha256": "7736ec674653b48d87f178915fac361b277d03d95da3bb0f625acdc6cf907fa1"
+    },
+    {
+      "path": "assets/LICENSE.colorbrewer",
+      "bytes": 13233,
+      "sha256": "2ef5bdf2b8be7ec1a1d20614d1bacd1b83fa6069d2ad6e50f134795aa77ec71f"
+    },
+    {
+      "path": "assets/marmousi2d-acceptance/DATA_ATTRIBUTION.txt",
+      "bytes": 838,
+      "sha256": "cfc18e05b9fde2d042189dd1fd6c07280aa0e909af51503a191abd3cbea3d383"
+    },
+    {
+      "path": "assets/marmousi2d-acceptance/DATA_TERMS.txt",
+      "bytes": 584,
+      "sha256": "cda159f5add3ea90f0bb1cab6c5325725a0c59d8d0d41bdda7b696e64e23cf54"
+    },
+    {
+      "path": "assets/marmousi2d-acceptance/manifest.json",
+      "bytes": 2983,
+      "sha256": "4af98c6f1a6b0b6a3356ad24896d35c73afe9e94b0746114acc46dc01c1c1564"
+    },
+    {
+      "path": "assets/salt3d-acceptance/DATA_ATTRIBUTION.txt",
+      "bytes": 3657,
+      "sha256": "67fbc7ce9bbe81c0361978cfdd606f2c33f09af32c3dde063c28f04916d659a3"
+    },
+    {
+      "path": "assets/salt3d-acceptance/DATA_LICENSE.txt",
+      "bytes": 19050,
+      "sha256": "1aaf0648e34e568b31c2f1511958c1915a164511989c693fc133e82a10e557cb"
+    },
+    {
+      "path": "assets/salt3d-acceptance/manifest.json",
+      "bytes": 3278,
+      "sha256": "ce31bfe04cd68fdb2c5827b8bc94aa0a5dc6892d50f579382945af20dace72c0"
+    },
+    {
+      "path": "assets/salt3d-acceptance/model_fields.npz",
+      "bytes": 181788,
+      "sha256": "fb0d4acc42525ed501e6fe1eb922a7445c7ff17ac9b7c1f0ab8a7e906da7c585"
+    },
+    {
+      "path": "assets/volume-viewer.js",
+      "bytes": 10238,
+      "sha256": "f568d0b959acf531878dcd9f2d40ea48ca3541a06aafe4d1f305a0f5d1ba8a39"
+    },
+    {
+      "path": "references/application-record.md",
+      "bytes": 4500,
+      "sha256": "ebbf8bed902e33e72770b388fb2704a09ded73c831a8b6c48d5021263dcc7c64"
+    },
+    {
+      "path": "references/clean-source-application.md",
+      "bytes": 3883,
+      "sha256": "5ae3e5f835f4cb49402ba056fabbc74c5c3ec1dfbb0b85254e91212e77ed8c6d"
+    },
+    {
+      "path": "references/derivative-contract.md",
+      "bytes": 5750,
+      "sha256": "5820919e3514efdc965e2d7c9c520152cc4bf3e2923b6d92bca0cf9f1109f29c"
+    },
+    {
+      "path": "references/full-shot-inversion.md",
+      "bytes": 7454,
+      "sha256": "ae16c9964c294f837b09774ffbe46160f384ee15f971962e50c69bc4ad006bc1"
+    },
+    {
+      "path": "references/marmousi-2d-acceptance.md",
+      "bytes": 12947,
+      "sha256": "a5ae7bc8f23e6e2536257facf6057897d7fc40dc81461531da6acca1167ed929"
+    },
+    {
+      "path": "references/marmousi-2d-fast40-softdtw.json",
+      "bytes": 15496,
+      "sha256": "bdc40092e73856d9cf6f47c297fda60ce0e0b0442d8ad924127a9c4fd1898b9f"
+    },
+    {
+      "path": "references/marmousi-2d-input.json",
+      "bytes": 1632,
+      "sha256": "b6dfc0befbaec811f6de4463ad3b92bd1927e0caf443622ad84cfbbfd3d6086c"
+    },
+    {
+      "path": "references/marmousi-2d-legacy-acceptance.md",
+      "bytes": 6997,
+      "sha256": "eb79be4df844a2fa9a08efca8493524b3ebaae5509322440c14845238a775b43"
+    },
+    {
+      "path": "references/numerical-acceptance.md",
+      "bytes": 5149,
+      "sha256": "514b13b85bdb24c207b26132eb98c2dd6bd98456be0b54a26906d83ba0311678"
+    },
+    {
+      "path": "references/objective-demonstration.md",
+      "bytes": 8746,
+      "sha256": "8f031c56aa2695e2872f7edcb9136d7310ddcd86fa8cb5099d2a99ecff0c833c"
+    },
+    {
+      "path": "references/performance-history.md",
+      "bytes": 8153,
+      "sha256": "b6a85684b393bfcb6f172f938f46a5112bb4cb2782209c1ecaa9fb6abe04695d"
+    },
+    {
+      "path": "references/performance-report-template.md",
+      "bytes": 4251,
+      "sha256": "684a12bc2a715c36abc13cf3ac49c8f265ae74c95404310d00d96293716f949c"
+    },
+    {
+      "path": "references/salt3d-acceptance.json",
+      "bytes": 13494,
+      "sha256": "bd0cbc03cae5dae7530370585f831c6f79d3237007ea4d24f12a751e94c50395"
+    },
+    {
+      "path": "references/salt3d-acceptance.md",
+      "bytes": 6301,
+      "sha256": "00ecdaed0d65a230ac948ad430336aaf060484bd92ad7730033b100d33266d98"
+    },
+    {
+      "path": "references/soft-dtw-fixture.md",
+      "bytes": 4831,
+      "sha256": "ba47d4fcaab343692338412742d49993143bcc627ef651b89f24ea335f9d9636"
+    },
+    {
+      "path": "references/three-dimensional-inversion.md",
+      "bytes": 12273,
+      "sha256": "043bbfeab3410a4e910d4e7ca8f39d3bdc17fec521de73dd26c72621f6f605d3"
+    },
+    {
+      "path": "references/visualization-deliverables.md",
+      "bytes": 9661,
+      "sha256": "9c927920155f7222b4f432eaf052ab7884b2a059457ee0765c6268a87f44d7a2"
+    },
+    {
+      "path": "scripts/agl_marmousi.py",
+      "bytes": 7239,
+      "sha256": "5b50d8682588084d075637a1802ed26743246c3d2e5806d64214e828cf093e68"
+    },
+    {
+      "path": "scripts/check_iterations.py",
+      "bytes": 8084,
+      "sha256": "8a8bad44a3a2def9960f887620e4150e7de6c77eef4af41e0fbffbd47f059c6a"
+    },
+    {
+      "path": "scripts/check_soft_dtw_fixture.py",
+      "bytes": 2962,
+      "sha256": "84d3abbb567a93e29752b18111502a497594d443dcb9cc3b55fd9fe5b8a558a9"
+    },
+    {
+      "path": "scripts/model_recovery_report.py",
+      "bytes": 28372,
+      "sha256": "a8ac4ea656f8114c566803313922bbf3c8a060f82cc0089d54974838253e5639"
+    },
+    {
+      "path": "scripts/numerics.py",
+      "bytes": 12155,
+      "sha256": "ad8e5ef78da730d41dbe97a8e7ea7514204b055ebc870c6ff34638317cf825f8"
+    },
+    {
+      "path": "scripts/prepare_marmousi_acceptance.py",
+      "bytes": 4818,
+      "sha256": "db40511bf827ba6ba487e93fe0034d7eedbcc28657ffadab483e51f69c48f941"
+    },
+    {
+      "path": "scripts/prepare_marmousi_fast40.py",
+      "bytes": 15904,
+      "sha256": "1da77f61767570ce6a0d864e963ed0cf8a8670f76b99b75bb77dc12d6558d45c"
+    },
+    {
+      "path": "scripts/prepare_salt3d_acceptance.py",
+      "bytes": 12314,
+      "sha256": "228804829c4ab2b692865a73dd97ab2833a5b91a6636a598f43e6d6eddee83d2"
+    },
+    {
+      "path": "scripts/soft_dtw_objective.py",
+      "bytes": 13344,
+      "sha256": "f37dcaa66d9399b27545563fe125672e95a83535e4b7ba1ae51e5a60d027fefc"
+    },
+    {
+      "path": "scripts/visualize.py",
+      "bytes": 12147,
+      "sha256": "5780d3b91addba94a94b7610b7451331c7105e02c70859fef9806471936c050e"
+    }
+  ],
+  "generated_paths_excluded": [
+    ".DS_Store",
+    ".pytest_cache",
+    "__pycache__"
+  ]
+}
