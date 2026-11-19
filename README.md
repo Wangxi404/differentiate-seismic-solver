@@ -17,9 +17,12 @@ derivatives turn that source into a model gradient.
 
 ## Companion inversion software
 
-We used the Agent Skill to develop two standalone inversion packages.
-Each builds a native solver, runs a full-shot Vp inversion and writes an HTML
-report. Both support a user-defined differentiable receiver misfit.
+We used the Agent Skill to develop two standalone inversion packages. Each
+builds its native solver and supports user-defined differentiable receiver
+misfits. The examples invert for Vp using all shots at each update and write
+an HTML recovery report. Vp is the Skill's default recovery target. You can
+adapt the Skill to test another parameter supported by your solver, such as
+Vs or density.
 
 ### DiffSPECFEM-native · 2D Marmousi-II
 
@@ -59,12 +62,15 @@ Clone this repository alongside your solver checkout.
 git clone https://github.com/Wangxi404/differentiate-seismic-solver.git
 ```
 
-From the directory containing both checkouts, give your coding agent a request
-like this one.
+From the directory containing both checkouts, tell your coding agent which
+parameter you want to recover. Use Vp for the default test. For a custom Vs
+test with an elastic solver, for example, you can use this prompt:
 
 > Follow `./differentiate-seismic-solver/skills/differentiate-seismic-solver/SKILL.md`
 > to adapt `./my-solver`. Start from `./my-solver/examples/elastic`.
-> Add a Vp inversion, verify the model gradient, and generate the model-recovery report.
+> Adapt the recovery test to invert for Vs with Vp and density held fixed.
+> Reuse or implement the Vs sensitivity kernel and verify the Vs gradient.
+> Run the inversion and generate the model-recovery report.
 
 The skill checks native-forward equivalence and model gradients, accumulates
 all shot gradients at the same current model before each update, and produces
