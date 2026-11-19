@@ -29,8 +29,8 @@ Native SPECFEM2D propagates elastic P–SV waves in Fortran. The paper and
 software use the University of Houston AGL download edition of Marmousi-II.
 On first use, the software downloads Vp, Vs and density and builds the
 68 × 200 model and Gaussian-smoothed starting Vp locally.
-With all 40 shots in each update, whole-model Vp RMSE fell from **362 to
-191 m/s** after 300 updates. The example writes the true, initial and
+The inversion uses all 40 shots in each of its 300 updates.
+The example writes the true, initial and
 inverted Vp panels and the loss curve to a local HTML report.
 
 ![Marmousi-II Vp, from left to right: true model, Gaussian initial model and DiffSPECFEM-native inversion after 300 updates](docs/figures/diffspecfem-marmousi2.png)
@@ -42,9 +42,8 @@ Marmousi-II by Gary S. Martin, Robert Wiley and Kurt J. Marfurt.
 
 [DiffAxiSEM3D-native](https://github.com/Wangxi404/DiffAxiSEM3D-native)
 
-Native AxiSEM3D propagates 3D elastic waves in C++ with MPI. After 125
-updates with all 9 shots, Vp RMSE within the simulated cylinder fell from
-**201 to 166 m/s** on the 33 × 33 × 17 grid.
+Native AxiSEM3D propagates 3D elastic waves in C++ with MPI. The inversion
+uses all 9 shots in each of its 125 updates on the 33 × 33 × 17 grid.
 
 ![True, initial and inverted salt-model Vp on XY, X-depth and Y-depth sections after 125 updates](docs/figures/diffaxisem3d-salt.png)
 
