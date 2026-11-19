@@ -13,7 +13,7 @@ derivatives turn that source into a model gradient.
 
 ![A receiver-misfit gradient computed by AD supplies the adjoint source for a native seismic solver.](docs/figures/figure-1-solver-bridge.png)
 
-**Figure 1.** Data-domain AD connects a user-defined misfit to the native solver, which propagates the forward and adjoint wavefields.
+*Differentiating native seismic solvers.*
 
 ## Companion inversion software
 
@@ -72,7 +72,7 @@ an English recovery report. [Skill instructions](skills/differentiate-seismic-so
 
 ![The Agent Skill reproduces the native forward run, adds an adjoint, verifies model gradients and tests recovery in 2D or 3D.](docs/figures/figure-3-skill-workflow.png)
 
-**Figure 3.** The Agent Skill checks the forward response and model gradients before testing recovery on Marmousi-II or SEG/EAGE Salt. The three boxes under “Acceptance?” show the layout of the recovery report. [Benchmark model credits](docs/model-data.md)
+*Agent Skill workflow.*
 
 The skill code is MIT licensed. Model data have their own terms.
 [Code license](LICENSE) · [Model data and figure rights](docs/model-data.md)
