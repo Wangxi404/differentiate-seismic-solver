@@ -1,5 +1,9 @@
 # SeismicDiffSkill
 
+**Authors** Xi Wang, Zhanwen Li, and Xin Liu (corresponding author)
+
+Department of Earth and Planetary Sciences, The University of Hong Kong
+
 SeismicDiffSkill is a reusable Agent Skill that guides a coding agent through adding
 a differentiable inversion interface to an existing high-performance seismic
 forward solver. Wave propagation and parallel execution stay in the native
@@ -15,6 +19,8 @@ report. Both support a user-defined differentiable receiver misfit.
 
 ### DiffSPECFEM-native · 2D Marmousi-II
 
+[DiffSPECFEM-native](https://github.com/Wangxi404/DiffSPECFEM-native)
+
 Native SPECFEM2D propagates elastic P–SV waves in Fortran. The paper and
 software use the University of Houston AGL download edition of Marmousi-II.
 On first use, the software downloads Vp, Vs and density and builds the
@@ -22,7 +28,6 @@ On first use, the software downloads Vp, Vs and density and builds the
 With all 40 shots in each update, whole-model Vp RMSE fell from **362 to
 191 m/s** after 300 updates. The example writes the true, initial and
 inverted Vp panels and the loss curve to a local HTML report.
-[Run the inversion and generate the figures](https://github.com/Wangxi404/DiffSPECFEM-native#run-the-example)
 
 ![Marmousi-II Vp, from left to right: true model, Gaussian initial model and DiffSPECFEM-native inversion after 300 updates](docs/figures/diffspecfem-marmousi2.png)
 
@@ -31,10 +36,11 @@ Marmousi-II by Gary S. Martin, Robert Wiley and Kurt J. Marfurt.
 
 ### DiffAxiSEM3D-native · 3D SEG/EAGE Salt
 
+[DiffAxiSEM3D-native](https://github.com/Wangxi404/DiffAxiSEM3D-native)
+
 Native AxiSEM3D propagates 3D elastic waves in C++ with MPI. After 125
 updates with all 9 shots, Vp RMSE within the simulated cylinder fell from
 **201 to 166 m/s** on the 33 × 33 × 17 grid.
-[Software and run instructions](https://github.com/Wangxi404/DiffAxiSEM3D-native#run-the-example)
 
 ![True, initial and inverted salt-model Vp on XY, X-depth and Y-depth sections after 125 updates](docs/figures/diffaxisem3d-salt.png)
 
