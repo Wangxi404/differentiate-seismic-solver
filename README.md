@@ -24,6 +24,13 @@ an HTML recovery report. Vp is the Skill's default recovery target. You can
 adapt the Skill to test another parameter supported by your solver, such as
 Vs or density.
 
+Both the 2D and 3D inversions use **debiased soft-DTW divergence** as the
+waveform misfit. We chose it because deriving its adjoint source by hand
+requires differentiating through many possible time alignments, both between
+the synthetic and observed traces and between each synthetic trace and itself.
+PyTorch computes the gradient with respect to the synthetic traces, and each
+solver adapter maps that gradient to the native adjoint source.
+
 ### DiffSPECFEM-native · 2D Marmousi-II
 
 [DiffSPECFEM-native](https://github.com/Wangxi404/DiffSPECFEM-native)
